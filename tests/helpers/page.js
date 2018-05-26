@@ -4,6 +4,7 @@ const puppeteer = require("puppeteer");
 
 class CustomPage {
   static async build() {
+    // Set true so no browser will popup
     const browser = await puppeteer.launch({
       headless: true,
       args: ["--no-sandbox"]
